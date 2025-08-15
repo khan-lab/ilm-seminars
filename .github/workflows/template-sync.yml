@@ -1,0 +1,18 @@
+name: Sync from template
+on:
+  schedule:
+    - cron: "0 3 * * 1" # every Monday 03:00 UTC
+  workflow_dispatch: {}
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          source_repo_path: khan-lab/seminar-website-template
+          upstream_branch: main
+          pr_labels: template-sync
