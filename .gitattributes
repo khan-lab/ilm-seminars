@@ -1,0 +1,6 @@
+# Keep these from the site when merging the template
+_config.yml   merge=ours
+CNAME         merge=ours
+_data/**      merge=ours
+speakers.yml  merge=ours
+assets/uploads/** merge=ours
