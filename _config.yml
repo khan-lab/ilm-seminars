@@ -5,16 +5,16 @@
 
 version: "1.0.1"
 
-title: "A Seminar Series Website Template"
-tagline: "By Khan Lab @ MBZUAI, Abu Dhabi"
-description: "A Jekyll + Bootstrap starter for seminars/events series website with speakers, archive, calendar buttons, Bootwatch themes, event formats, and optional junior-speaker/meet modules."
+title: "Informatics for Life & Medicine (ILM) Seminars"
+tagline: "By the School of Digital Public Health, MBZUAI"
+description: "<b>ILM</b> is a flagship seminar series fostering collaboration in computational biology, AI, and systems medicine. Monthly talks with international and regional speakers, plus trainee spotlights."
 
-info_text: "&dagger;This template is open source and free to use, adapt, and build upon for seminar and event series in any discipline."
+info_text: "&dagger;The acronym <strong>ILM</strong> is inspired by the Arabic word 'ilm’ (علم), <a href='https://en.wikipedia.org/wiki/Ilm_(Arabic)' target='_blank'> knowledge, learning, or science(s)</a>."
 
-organization: "School of Public Health, University of Gahkuch"
+organization: "MBZUAI, Abu Dhabi"
 department: "Department of Computational Biology"
 
-logo: "/assets/img/logo_demo.png"
+logo: "/assets/img/logo.png"
 
 # Social media links
 image: "/assets/img/share.jpg"
@@ -22,7 +22,7 @@ image: "/assets/img/share.jpg"
 author: "Aziz Khan"
 email: "aziz.khan@mbzuai.ac.ae"
 
-url: ""
+url: "https://khanlab.bio/ilm-seminars/"
 baseurl: ""
 subscribe_url: "https://example.com/subscribe" # e.g., a newsletter signup link
 
