@@ -3,4 +3,6 @@ _config.yml   merge=ours
 CNAME         merge=ours
 _data/**      merge=ours
 speakers.yml  merge=ours
+assets/img/** merge=ours
+about.md      merge=ours
 assets/uploads/** merge=ours
