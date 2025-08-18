@@ -1,8 +1,8 @@
 name: Sync from template
 on:
-  schedule:
-    - cron: "0 3 * * 1" # every Monday 03:00 UTC
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 3 * * 1"
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -10,9 +10,14 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: AndreasAugustin/actions-template-sync@v2
+      - name: Checkout target repo default branch
+        uses: actions/checkout@v4
+        with:
+          ref: main # ensure it sees the latest .templatesyncignore
+      - name: Template sync (dry run first)
+        uses: AndreasAugustin/actions-template-sync@v2
         with:
           source_repo_path: khan-lab/seminar-website-template
           upstream_branch: main
-          pr_labels: template-sync
+          template_sync_ignore_file_path: .templatesyncignore
+          is_dry_run: true
