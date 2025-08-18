@@ -1,0 +1,8 @@
+# keep site-specific config and data
+_config.yml
+CNAME
+_data/**
+# keep uploads/media
+assets/img/**
+# optional: keep local pages that shouldn’t be overwritten
+about.md
